@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color:#aebcde75;
+}
+main{
+    padding: 3rem 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+h1{
+    color: black;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+.counter{
+    background-color: #00ff84;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: aliceblue;
+}
+.counter-value{
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+}
+.counter-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  0 -0 0.5rem;
+}
+.counter-controls button{
+    margin: 0 -0 0.5rem;
+}
+button{
+    appearance: none;
+    background:none;
+    border: none;
+    outline:none;
+
+    color: wheat;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+button span {
+    display: block;
+   transition: 0.4s ease-out;
+
+}
+button [data-action="reset"] {
+    color: #1565c0;
+    opacity: 0.5;
+
+}
+button [data-action="reset"]:hover{
+    opacity: 1;
+}
+.save {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+}
+.save button {
+    color:#55d5b0;
+
+}
+button:active{
+    transform: scale(1.1);
+}
